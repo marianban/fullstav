@@ -1,0 +1,111 @@
+/*
+  Theme Name: Fullstav
+  Template: neve
+*/
+
+/*Custom button text style*/
+.btn, .button, .wp-block-button a, button, input[type=button], input[type=submit]{
+	font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*Blog Images*/
+.wp-block-themeisle-blocks-posts-grid .wp-block-themeisle-blocks-posts-grid-post-blog .wp-block-themeisle-blocks-posts-grid-post .wp-block-themeisle-blocks-posts-grid-post-image img{
+	border-radius: 0px;
+}
+
+
+/*Center the Icon List items*/
+.wp-block-themeisle-blocks-icon-list {
+	justify-content: space-evenly;
+}
+
+/* Hide the default footer credit */
+.footer-bottom p {
+  visibility: hidden;
+  /* keep the space so your new text can position correctly */
+  position: relative;
+}
+
+/* Inject your own copyright text */
+.footer-bottom p::after {
+  visibility: visible;
+  content: "© 2025 FULLSTAV SK s.r.o.";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* inherit the theme’s footer text styling */
+  font: inherit;
+  color: inherit;
+}
+
+
+/* Container */
+.phone-dialog {
+  border: none;
+  border-radius: 8px;
+  max-width: 320px;
+  width: 90%;
+  padding: 0;
+}
+
+.phone-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Inner box */
+.phone-dialog__content {
+  position: relative;
+  background: #ffffff;
+  padding: 2rem 1.5rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  font-family: inherit;
+}
+
+/* Close button */
+.phone-dialog__close {
+	all: unset;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: transparent;
+  border: none;
+  font-size: 2.25rem;
+  color: var(--nv-primary-accent);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.phone-dialog__close:hover {
+	background: none;
+	color: black;
+}
+
+/* Title & text */
+.phone-dialog__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.5rem;
+  color: var(--nv-secondary-accent);
+}
+.phone-dialog__text {
+  margin: 0 0 1rem;
+  color: #333;
+}
+
+/* Phone number “button” */
+.phone-dialog__number {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: var(--nv-primary-accent);
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.phone-dialog__number:hover {
+  background: darken(var(--nv-primary-accent), 10%);
+}
